@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C8D6CAE2801F17300611961 /* Learning_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D6CAD2801F17300611961 /* Learning_AppApp.swift */; };
-		1C8D6CB02801F17300611961 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D6CAF2801F17300611961 /* ContentView.swift */; };
+		1C8D6CAE2801F17300611961 /* Learning_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D6CAD2801F17300611961 /* Learning_App.swift */; };
+		1C8D6CB02801F17300611961 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D6CAF2801F17300611961 /* HomeView.swift */; };
 		1C8D6CB22801F17300611961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C8D6CB12801F17300611961 /* Assets.xcassets */; };
 		1C8D6CB52801F17300611961 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C8D6CB42801F17300611961 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C8D6CAA2801F17300611961 /* Learning App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C8D6CAD2801F17300611961 /* Learning_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_AppApp.swift; sourceTree = "<group>"; };
-		1C8D6CAF2801F17300611961 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1C8D6CAD2801F17300611961 /* Learning_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_App.swift; sourceTree = "<group>"; };
+		1C8D6CAF2801F17300611961 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1C8D6CB12801F17300611961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C8D6CB42801F17300611961 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +51,12 @@
 		1C8D6CAC2801F17300611961 /* Learning App */ = {
 			isa = PBXGroup;
 			children = (
-				1C8D6CAD2801F17300611961 /* Learning_AppApp.swift */,
-				1C8D6CAF2801F17300611961 /* ContentView.swift */,
+				1C8D6CAD2801F17300611961 /* Learning_App.swift */,
+				1C8D6CC72802AA8A00611961 /* Models */,
+				1C8D6CC82802AA8D00611961 /* ViewModels */,
+				1C8D6CC62802AA6200611961 /* Views */,
+				1C8D6CCA2802AA9800611961 /* Resources */,
+				1C8D6CC92802AA9700611961 /* Helpers */,
 				1C8D6CB12801F17300611961 /* Assets.xcassets */,
 				1C8D6CB32801F17300611961 /* Preview Content */,
 			);
@@ -65,6 +69,42 @@
 				1C8D6CB42801F17300611961 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1C8D6CC62802AA6200611961 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C8D6CAF2801F17300611961 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C8D6CC72802AA8A00611961 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C8D6CC82802AA8D00611961 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1C8D6CC92802AA9700611961 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1C8D6CCA2802AA9800611961 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C8D6CB02801F17300611961 /* ContentView.swift in Sources */,
-				1C8D6CAE2801F17300611961 /* Learning_AppApp.swift in Sources */,
+				1C8D6CB02801F17300611961 /* HomeView.swift in Sources */,
+				1C8D6CAE2801F17300611961 /* Learning_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

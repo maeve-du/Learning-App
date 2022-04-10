@@ -15,6 +15,7 @@
 		1C8D6CCF2802E10300611961 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C8D6CCD2802E10300611961 /* data.json */; };
 		1C8D6CD02802E10300611961 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 1C8D6CCE2802E10300611961 /* style.html */; };
 		1C8D6CD22802E29E00611961 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D6CD12802E29E00611961 /* Module.swift */; };
+		1CDACC012803169E000D5BAD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDACC002803169E000D5BAD /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		1C8D6CCD2802E10300611961 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		1C8D6CCE2802E10300611961 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		1C8D6CD12802E29E00611961 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		1CDACC002803169E000D5BAD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				1C8D6CAF2801F17300611961 /* HomeView.swift */,
+				1CDACC002803169E000D5BAD /* Card.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			files = (
 				1C8D6CB02801F17300611961 /* HomeView.swift in Sources */,
 				1C8D6CD22802E29E00611961 /* Module.swift in Sources */,
+				1CDACC012803169E000D5BAD /* Card.swift in Sources */,
 				1C8D6CAE2801F17300611961 /* Learning_App.swift in Sources */,
 				1C8D6CCC2802AC4600611961 /* ContentView.swift in Sources */,
 			);

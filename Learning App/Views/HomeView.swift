@@ -22,8 +22,18 @@ struct HomeView: View {
                     LazyVStack {
                         ForEach(model.modules) { module in
                             VStack(spacing: 0) {
-                                // learning card
-                                Card(image: module.content.image, title: "Learn " +  module.category, description: module.content.description, count: String(module.content.lessons.count), time: module.content.time)
+                                
+                                NavigationLink {
+                                    ContentListView()
+                                        .onAppear {
+                                            model.beginModule(module.id)
+                                        }
+                                } label: {
+                                    // learning card
+                                    Card(image: module.content.image, title: "Learn " +  module.category, description: module.content.description, count: String(module.content.lessons.count), time: module.content.time)
+                                    
+                                }
+
                                 
                                 // test card
                                 Card(image: module.test.image, title: module.category + " Test", description: module.test.description, count: String(module.test.questions.count), time: module.test.time)

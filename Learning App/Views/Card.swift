@@ -59,6 +59,8 @@ struct Card: View {
                 .padding(.vertical,20)
             }
             .padding()
+//            .foregroundColor(.black)
+            .accentColor(.black)
         }//: card
         .aspectRatio(CGSize(width: 335, height: 175), contentMode: .fit)
         .padding()

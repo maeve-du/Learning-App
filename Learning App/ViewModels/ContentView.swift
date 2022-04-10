@@ -9,13 +9,20 @@ import Foundation
 import CoreImage
 
 class ContentModel: ObservableObject {
+    // list of modules
     @Published var modules = [Module]()
+    
+    // current module
+    @Published var currentModule: Module?
+    var currentModuleIndex = 0
+    
     var styleData: Data?
     
     init() {
         getLocalData()
     }
     
+    // MARK: - data method
     func getLocalData() {
         // get a url to the  json file
         let jsonUrl = Bundle.main.url(forResource: "data", withExtension: "json")
@@ -47,5 +54,22 @@ class ContentModel: ObservableObject {
         
     }
     
+    // MARK: - module navigation method
+    
+    func beginModule( _ moduleId:Int ) {
+        
+        // find the index for the module id
+        for index in 0..<modules.count {
+            if modules[index].id == moduleId {
+                
+                // find the macthing module
+                currentModuleIndex = index
+                break
+            }
+        }
+        // set the current method
+        currentModule = modules[currentModuleIndex]
+        
+    }
 }
 

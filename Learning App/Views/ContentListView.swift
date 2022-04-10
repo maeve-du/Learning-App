@@ -19,10 +19,18 @@ struct ContentListView: View {
                        
                         let lesson = model.currentModule!.content.lessons[index]
                         
-                        ContentListRow(
-                            itemIndex: index+1,
-                            itemTitle: lesson.title,
-                            itemTime: lesson.duration)
+                        NavigationLink {
+                            ContentDetailView()
+                                .onAppear {
+                                    model.beginLesson(index)
+                                }
+                        } label: {
+                            ContentListRow(
+                                itemIndex: index+1,
+                                itemTitle: lesson.title,
+                                itemTime: lesson.duration)
+                        }
+
                     }
                 }
                
